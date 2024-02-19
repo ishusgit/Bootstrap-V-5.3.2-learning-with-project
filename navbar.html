@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+<body>
+    <h5 class="text-center text-info my-4">Welcome to NAVBAR in Bootstrap V-5.3.2</h5>
+    <!--navbar with toggler,dropdown,form,and all mix and match-->
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:rgb(248, 1, 104);">
+        <div class="container-fluid">
+        <!--navbar brand-->
+        <a href="#" class="navbar-brand text-white ms-3"><img src="" alt="">Navbar</a>
+        <!--toggler button-->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#idnameofnavbar" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--navitems-->
+        
+        <div class="collapse navbar-collapse" id="idnameofnavbar">
+            <ul class="navbar-nav mx-lg-auto text-white my-lg-0 my-3">
+                <li class="nav-item active"><a href="navbar.html" class="nav-link" style="color:rgb(67, 255, 255);">Home</a></li>
+                <li class="nav-item"><a href="alert.html" class="nav-link text-white">Alert</a></li>
+                <li class="nav-item dropdown dropdown-center w-50">
+                    <a href="badges.html" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" >Topics</a>
+                    <ul class="dropdown-menu my-3">
+                        <h5 class="dropdown-header text-center text-primary fs-6">BS courses</h5>
+                        <li><a href="badges.html" class="dropdown-item">Badge</a></li>
+                        <li><a href="tooltip.html" class="dropdown-item">Tooltip</a></li>
+                        <li><a href="placeholder.html" class="dropdown-item">Placeholder</a></li>
+                        <li><a href="nav_tab.html" class="dropdown-item">Nav-Tabs</a></li>
+                        <li class="dropdown-divider"></li>
+                        <h2 class="dropdown-header text-center text-success fs-6">Other Courses</h2>
+                        <li><a href="popover.html" class="dropdown-item">Popover</a></li>
+                        <li><a href="modal.html" class="dropdown-item">Modal</a></li>
+                        <li><a href="list_group.html" class="dropdown-item">List-group</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="card.html" class="nav-link text-white">Card</a></li>
+            </ul>
+            <!--form-->
+            <form action="" class=" me-5 my-3 my-lg-0">
+            <input type="text" id="formsearch" class="form-control text-secondary" placeholder="search...">
+            </form>
+           <!--navbar-text-->
+           <div class="navbar-text d-flex justify-content-between align-items-center me-lg-3 me-xs-auto">
+           <a href="#" class="pe-4 text-white nav-link">Sign-In</a>
+           <button class="btn btn-warning text-white me-0">Register</button>
+           </div>
+        </div>
+        </nav>
+</div>
+<hr>
+<!--offcanvas with navbar-expand-lg in fixed-bottom-->
+<div class="container">
+<nav class="navbar fixed-bottom navbar-expand-lg" style="background:rgb(122, 1, 170);">
+    <div class="container-fluid">
+    <!--toggle button-->
+    <button class="navbar-toggler bg-white" data-bs-toggle="offcanvas" data-bs-target="#idnameofoffcanvas">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--navbar-brand-->
+    <a href="#" class="navbar-brand mx-3" style="color:yellow;">NavBar</a>
+    <!--offcanvas-->
+    <div class="offcanvas offcanvas-lg offcanvas-start" id="idnameofoffcanvas" tabindex="-1" data-bs-theme="dark" data-bs-scroll="true" data-bs-backdrop="false">
+        <div class="offcanvas-content">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-5">Offcanvas Title</h5>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav mx-lg-auto my-lg-0 my-4 text-white">
+                    <li class="nav-item active"><a href="navbar.html" class="nav-link" style="color:rgb(67, 255, 255);">Home</a></li>
+                    <li class="nav-item"><a href="alert.html" class="nav-link text-white">Alert</a></li>
+                    <li class="nav-item dropdown dropdown-center w-50">
+                        <a href="badges.html" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" >Topics</a>
+                            <ul class="dropdown-menu my-3">
+                               <h5 class="dropdown-header text-center text-primary fs-6">BS courses</h5>
+                                <li><a href="badges.html" class="dropdown-item">Badge</a></li>
+                                <li><a href="tooltip.html" class="dropdown-item">Tooltip</a></li>
+                                <li><a href="placeholder.html" class="dropdown-item">Placeholder</a></li>
+                                <li><a href="nav_tab.html" class="dropdown-item">Nav-Tabs</a></li>
+                                <li class="dropdown-divider"></li>
+                                <h2 class="dropdown-header text-center text-success fs-6">Other Courses</h2>
+                                <li><a href="popover.html" class="dropdown-item">Popover</a></li>
+                                <li><a href="modal.html" class="dropdown-item">Modal</a></li>
+                                <li><a href="list_group.html" class="dropdown-item">List-group</a></li>
+        
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="card.html" class="nav-link text-white">Card</a></li>
+                    </ul>
+                    <!--form-->
+                    <form action="" class=" me-5 my-3 my-lg-0">
+                    <input type="text" id="formoffsearch" class="form-control text-dark bg-white" placeholder="search...">
+                    </form>
+                   <!--navbar-text-->
+                   <div class="navbar-text d-flex justify-content-between align-items-center me-lg-3 me-xs-auto ">
+                   <a href="#" class="pe-4 text-white nav-link">Sign-In</a>
+                   <button class="btn btn-warning text-white me-0">Register</button>
+                   </div>    
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+</div>
+<div class="my-4">
+    <p class="text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur commodi harum dolor 
+        asperiores recusandae, voluptas placeat cumque? Ratione tempora nesciunt nobis illo impedit quod, 
+        quibusdam sit quisquam, eligendi ut qui in. Ipsa, qui explicabo! Modi natus corporis necessitatibus 
+        soluta architecto nisi quisquam dolorum. Cupiditate neque explicabo facilis unde fugiat maxime enim autem 
+        vel praesentium inventore beatae dolorum, eaque quo dignissimos repellendus incidunt optio 
+        dolore reiciendis ducimus ipsa id temporibus nam. Delectus deserunt voluptatem autem 
+        cupiditate! Minus reprehenderit quas vel maiores iure error optio laborum sapiente 
+        quis beatae quidem aperiam consequatur rem commodi tenetur aliquam ut, quae explicabo 
+        nisi obcaecati totam? Dolor id autem at necessitatibus provident vel officia hic. 
+    Eveniet tempore quae, necessitatibus maxime commodi nobis placeat recusandae adipisci sed a
+    liquid ipsa reprehenderit facilis? Assumenda quibusdam excepturi maxime deleniti facere illum, 
+    dicta dignissimos corrupti temporibus earum! Libero eligendi, atque nam sequi dolorem adipisci 
+    autem harum ratione cupiditate nulla minus culpa rerum dolores consequatur sapiente nisi provident 
+    recusandae quis delectus? Hic animi aspernatur porro soluta nulla voluptatibus accusamus iste maxime! 
+    Suscipit iusto voluptas necessitatibus nihil delectus perferendis quis assumenda, soluta dolorem 
+    enim repudiandae deserunt eligendi ad nulla quidem numquam autem! Quidem totam ipsa dolorem, nesciunt 
+    repellat quia harum officia eveniet distinctio et accusantium repellendus exercitationem ipsum 
+    ducimus unde aliquam dolorum, laboriosam quis iure quas itaque blanditiis est? Ducimus vero perspiciatis 
+    nulla excepturi rem unde rerum praesentium quibusdam dolorem asperiores enim obcaecati voluptas velit quos 
+    vitae eveniet aliquam, sapiente quidem veniam libero eum laborum! Illum sed deleniti nulla corporis accusan
+    tium quod magnam quo incidunt ipsa vero expedita voluptates ipsam mollitia eveniet, cum amet recusandae minus 
+    at repellat itaque debitis labore modi deserunt possimus? Ab neque sed obcaecati nam inventore impedit 
+    optio eveniet quaerat, eaque nobis accusamus unde laborum molestiae enim quidem commodi magni
+     aliquid animi minima, deleniti ea, in dolore voluptate facere? Culpa, modi adipisci. Similiq
+     ue, iure veritatis illo totam aspernatur dolor fuga fugit amet, quis consequuntur maxime id,
+     repudiandae deleniti nostrum voluptatem ratione praesentium? Dicta hic repellat inventore qu
+     
+     ibusdam praesentium nulla exercitationem mollitia quo deserunt debitis. Neque cum pariatur, itaque di
+     gnissimos aspernatur magni autem inventore sequi aut, hic rerum alias quae nesciunt, corrupti saepe e
+     
+     xcepturi ullam aliquam iste eius. Ratione iure doloribus, nulla ad laboriosam voluptates optio assumend
+     a magni deserunt. In explicabo sint dignissimos debitis, sequi dolore voluptas a fuga beatae ea tempora similique quaerat veritatis, doloribus laborum minus, tenetur blanditiis at delectus incidunt consequatur voluptatum et reprehenderit! Voluptas deserunt ipsam iste consequatur possimus harum fugiat, illo nam, suscipit vero aut reiciendis atque at nostrum, placeat nulla a repellendus pariatur rerum animi officia! Dolore quae veniam odio impedit! Est ex inventore earum non minus debitis voluptatem autem reprehenderit magni atque vel, dolores nihil excepturi ipsa tenetur dolorum ducimus voluptatum ab tempore doloremque accusantium accusamus beatae! Sunt praesentium neque consectetur, unde nobis pariatur tempore veniam at excepturi laboriosam magnam assumenda, doloribus illo officia quisquam eveniet optio! Officia voluptate eum natus illo nihil assumenda, voluptatum enim sint cum voluptates perspiciatis nam, quas veniam magnam animi quia laudantium explicabo consectetur a cupiditate dolorem ad?</p>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit sunt minima consequatur corrupti, voluptatem nisi inventore aspernatur ad quibusdam alias enim iste quam cupiditate modi ipsam possimus quis doloremque perspiciatis voluptatum recusandae excepturi facere id! Asperiores cumque, a tenetur quae quibusdam impedit sint dicta provident laudantium ea hic et modi. Totam molestiae exercitationem expedita debitis deleniti, magni iusto blanditiis aut praesentium porro, beatae labore odio, eum cumque explicabo error aliquam commodi saepe tenetur voluptates necessitatibus provident. Quisquam suscipit obcaecati rerum consequatur? Provident, praesentium debitis aut libero dicta dolorem quasi fugit minus distinctio obcaecati! Incidunt nisi exercitationem magnam! Laudantium eaque velit dolores, rem eligendi consequatur repellat delectus debitis hic accusamus, iste maxime molestiae! Provident incidunt sed repellat error maiores eius quae ut consectetur non obcaecati possimus, rerum sit eveniet placeat iste qui, repudiandae iusto architecto. Excepturi quasi fugiat, nemo repudiandae quaerat magnam neque obcaecati in necessitatibus magni earum illo itaque dolore porro fuga voluptatibus distinctio ex aut? Temporibus architecto ratione maxime id magni odit excepturi dolorum consequatur molestiae cumque. Quia alias velit fugit. Itaque adipisci labore error minus quis odio praesentium assumenda libero alias dolore quae dicta deserunt cum, ex repellat ut nam maxime hic qui facilis! Itaque est doloribus ut?</p>
+    </div>
+
+    
+   
+
+        
+    
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h5 class=" text-center text-success my-3 text-uppercase text-decoration-underline">
+        welcome to <span class="text-primary">
+        carousel slide</span> component in Bootstrap-V.5.3.2</h5>
+    
+        <div class="container my-5">
+            <div class="row">
+                <div class="offset-md-2 col-md-8 offset-md-2" style="height:500px;">
+                    <div class="carousel slide carousel-dark carousel-fade" id="carouselExample" data-bs-ride="carousel" style="position:relative;">
+                        <!--indicators-->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-slide-to="0" aria-label="Slide 1" aria-current="true" class="active"
+                             data-bs-target="#carouselExample"></button>
+                             <button type="button" data-bs-slide-to="1" aria-label="Slide 2" 
+                             data-bs-target="#carouselExample"></button>
+                             <button type="button" data-bs-slide-to="2" aria-label="Slide 3" 
+                             data-bs-target="#carouselExample"></button>
+                        </div>
+                        <!--caption.interval-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000" style="position:relative;">
+                                 <img src="fish_thaali.jpeg" alt="" class="d-block w-100" style="height:500px;filter:blur(2px);">
+                                 <div class="carousel-caption" style="position:absolute;transform:translateY(-150px);">
+                                    <h5 class="text-uppercase fw-bolder fs-4">Fish Thaali Menu</h5>
+                                    <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis sint voluptatem aliquam vero 
+                                        perferendis deserunt minus placeat, ab quidem odit illo provident, minima neque.</p>
+                                 </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="chicken_dinner.jpeg" alt="" class="d-block w-100" style="height:500px;filter:blur(2px);">
+                                 <div class="carousel-caption" style="position:absolute;transform:translateY(-150px);">
+                                    <h5 class="text-uppercase fs-4 fw-bolder">Chicken dinner Menu</h5>
+                                    <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis sint voluptatem aliquam vero 
+                                        perferendis deserunt minus placeat, ab quidem odit illo provident, minima neque.</p>
+                                 </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fish_menu.jpeg" alt="" class="d-block w-100" style="height:500px;filter:blur(2px);">
+                                 <div class="carousel-caption" style="position:absolute;transform:translateY(-150px);">
+                                    <h5 class="text-uppercase fs-4 fw-bolder ">fish Lunch Menu</h5>
+                                    <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis sint voluptatem aliquam vero 
+                                        perferendis deserunt minus placeat, ab quidem odit illo provident, minima neque.</p>
+                                 </div>
+                            </div>
+                        </div>
+                        <!--controls(previous,next)-->
+                        <button type="button" class="carousel-control-prev" aria-hidden="true" 
+                        data-bs-slide="prev" data-bs-target="#carouselExample" style="padding:10px;position:absolute;top:50%;left:30px;border-radius:50%;width:30px;height:30px;background:rgb(255, 0, 106);">
+                        <span class="carousel-control-prev-icon"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button type="button" class="carousel-control-next" style="padding:10px;position:absolute;top:50%;right:30px;border-radius:50%;width:30px;height:30px;background:rgb(255, 0, 106);" aria-hidden="true" 
+                        data-bs-slide="next" data-bs-target="#carouselExample">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                         </button>
+                    </div>
+                </div>
+            </div>
+        
+    </div>    
+
+        
+
+
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .custom-tooltip{
+            --bs-tooltip-bg: rgb(255, 3, 79);
+            --bs-tooltip-color: white;
+            --bs-tooltip-max-width:250px;
+            --bs-tooltip-border-radius:10px;
+            --bs-tooltip-padding-y:0.75rem;
+            --bs-tooltip-padding-x:0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <h5 class="text-center text-dark my-3">Welcome to TOOLTIP in Bootstrap V-5.3.2</h5>
+    <div class="container my-4 border">
+    <h6 class="text-success text-decoration-underline text-uppercase my-5">tooltips in links and directions:</h6>
+    <p class="border border-2 border-warning px-3 py-3 m-4 rounded-1">
+        Lorem ipsum dolor sit amet <a href="#" data-bs-toggle="tooltip" data-bs-title="Hello!How are you?" 
+        data-bs-placement="top">consectetur adipisicing</a> 
+         Dolore assumenda quasi ipsa expedita ipsum dignissimos accusantium. 
+        Hic ipsa magnam <a href="#" data-bs-toggle="tooltip" data-bs-title="How May I Help You?" data-bs-placement="bottom"> officia dolore?</a> Vitae fugiat neque quia rem explicabo dolore dolores, doloribus minima repellendus,
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="ok,staff will guide you"> sunt veniam</a> saepe vero laborum vel
+        dignissimos accusantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum hic,
+        numquam placeata <a href="#" data-bs-toggle="tooltip" data-bs-title="Thank You." data-bs-placement="left"> accusamus </a>ducimus quo.
+    </p>
+    <!--custom tooltip using CSS-->
+    <h6 class="text-danger text-decoration-underline mt-5 text-uppercase">Custom Tooltip in CSS</h6>
+    <button class="btn btn-warning text-secondary m-4" data-bs-toggle="tooltip"
+    data-bs-title="sorry,we won't help you! one of our staff will guide you through online-zoom within 5 mins.Thank you!" data-bs-placement="right" data-bs-custom-class="custom-tooltip">Custom Tooltip in CSS</button>
+    <!--tooltip with HTML-->
+    <h6 class="text-danger text-decoration-underline mt-0 text-uppercase">Tooltip with html</h6>
+    <button class="btn btn-success m-4" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+    data-bs-title="<i>Tooltip</i> <u>with</u> <b>HTML</b>">Tooltip with Html</button>
+
+    <!-- HTML to write -->
+    <a href="#" data-bs-toggle="tooltip" data-bs-title="Some tooltip text!" data-bs-placement="right">Hover over me</a>
+
+    <!-- Generated markup by the plugin -->
+    <div class="tooltip bs-tooltip-auto" role="tooltip">
+      <div class="tooltip-arrow"></div>
+        <div class="tooltip-inner">
+            Some tooltip text!
+        </div>
+    </div>
+<!--disabled element-->
+    <span class="d-inline-block" tabindex="0"  data-bs-toggle="tooltip" data-bs-title="Disabled tooltip">
+        <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+      </span>
+</div>
+
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     
+    
+    <!--this is default in getbbotstrap.com for TOOLTIP enabling-->
+     <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+     </script>
+</body>
+</html>

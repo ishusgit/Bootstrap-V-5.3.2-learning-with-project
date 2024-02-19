@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h5 class="text-center text-dark my-3">Welcome to TOASTS in Bootstrap V-5.3.2</h5>
+    <div class="container border my-3">
+        <!--basic example-->
+        <h6 class="text-primary text-decoration-underline text-uppercase mt-4">Basic example with autohide-false</h6>
+        <div class="toast mt-4" data-bs-autohide="false" role="alert" >
+            <div class="toast-header">
+                  <strong class="me-auto">Bootstrap</strong>
+                  <small class="text-secondary">11 mins ago!</small>
+                  <button class="btn-close" type="button" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+               <span class="text-success">Bootstrap Toasts Notifications without 
+                automatic hide property.
+               </span>
+            </div>
+        </div>
+        <hr>
+        <!--live button example with color-->
+        <h6 class="text-primary text-decoration-underline text-uppercase mt-5">Live demo-toast with color</h6>
+        <button class="btn btn-danger text-white mt-4"  id="liveToastBtn">Live Demo Toast</button>
+        <div class="position-fixed-top">
+            <div class="toast-container top-0 end-0 p-5">
+        <div class="toast border-0" data-bs-autohide="false" id="liveToast">
+            <div class="toast-header bg-warning">
+                <strong class="me-auto">Bootstrap</strong>
+                <small class="text-secondary">11 mins ago!</small>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body bg-secondary">
+                <span class="text-white">Bootstrap Toasts Notifications without 
+                    automatic hide property.
+                   </span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <!--stack toasts-->
+    <h6 class="text-primary text-decoration-underline text-uppercase mt-5">stacks toast using toast-container with position</h6>
+    
+        
+            <div class="toast-container position-static">
+                <div class="toast mt-4" data-bs-autohide="false" role="alert" >
+                    <div class="toast-header">
+                          <strong class="me-auto">Bootstrap</strong>
+                          <small class="text-secondary">11 mins ago!</small>
+                          <button class="btn-close" type="button" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                       <span class="text-success">Bootstrap Toasts Notifications without 
+                        automatic hide property.
+                       </span>
+                    </div>
+                </div>
+                   <!--2nd toast-->
+                   <div class="toast mt-4" data-bs-autohide="false" role="alert" >
+                    <div class="toast-header">
+                          <strong class="me-auto">Bootstrap</strong>
+                          <small class="text-secondary">11 mins ago!</small>
+                          <button class="btn-close" type="button" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                       <span class="text-success">Bootstrap Toasts Notifications without 
+                        automatic hide property.
+                       </span>
+                    </div>
+                </div>
+            </div>
+        
+    <hr>
+    <h6 class="text-primary text-decoration-underline text-uppercase mt-5">flexbox utilities</h6>
+    <div class="d-flex justify-content-center align-items-center w-75 border">
+        <div class="toast mt-4" data-bs-autohide="false" role="alert" >
+            <div class="toast-header">
+                  <strong class="me-auto">Bootstrap</strong>
+                  <small class="text-secondary">11 mins ago!</small>
+                  <button class="btn-close" type="button" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+               <span class="text-success">Bootstrap Toasts Notifications without 
+                automatic hide property.
+               </span>
+            </div>
+        </div>
+    </div>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="toast-container position-static">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small class="text-body-secondary">just now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            See? Just like this.
+          </div>
+        </div>
+      
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small class="text-body-secondary">2 seconds ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Heads up, toasts will stack automatically
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <!--initialize toast via javascript-->
+   
+</body>
+</html>

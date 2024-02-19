@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+    .custom-popover{
+        --bs-popover-header-bg:rgb(87, 1, 15);
+        --bs-popover-header-color:white;
+        --bs-popover-border-radius:10px;
+        --bs-popover-body-padding-x:0.75rem;
+        --bs-popover-body-padding-y:0.75rem;
+    }
+</style>
+</head>
+<body>
+    <h5 class="text-center text-primary my-3">Welcome to POPOVER in Bootstrap V-5.3.2</h5>
+    <div class="container my-4 border">
+        <h6 class="text-decoration-underline text-uppercase text-success mt-4">popovers</h6>
+        <button class="btn btn-warning text-dark m-4" data-bs-toggle="popover" data-bs-title="popover-title"
+        data-bs-content="popover component is always having popover-title and popover-content." 
+        >Popover</button>
+
+        <!--custom popover with placement(direction)-->
+        <h6 class="text-decoration-underline text-uppercase text-success mt-4">custom popovers</h6>
+        <button class="btn btn-success text-white m-4" data-bs-toggle="popover" data-bs-title="popover-title"
+        data-bs-placement="right"
+        data-bs-content="popover component is always having popover-title and popover-content." data-bs-custom-class="custom-popover" 
+        >Popover</button>
+
+        <!--disabled click-->
+        <h6 class="text-decoration-underline text-uppercase text-success mt-4">Dismiss clicking element</h6>
+        <div class="d-flex justify-content-center mt-4">
+        <a class="btn btn-primary text-white m-4" data-bs-toggle="popover" tabindex="0"
+        data-bs-placement="left" data-bs-trigger="focus"
+        data-bs-content="popover component is always having popover-title and popover-content.Dismiss the popover box 
+        ,when you click outside." 
+        >Dismiss Clicking Element</a>
+        </div>
+        
+        <!--disabled element-->
+        <h6 class="text-decoration-underline text-uppercase text-success mt-4">Disabled element</h6>
+        <span class="d-inline-block" data-bs-toggle="popover" data-bs-trigger="hover focus" 
+        tabindex="0" data-bs-content="popover disabled content using data-bs-trigger:hover focus attribute
+         in wrapper element like <div> and <span> tag.">
+        <button class="btn btn-danger text-white mx-4 my-3">Disabled elements</button>
+    </span>
+    </div>
+
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    <!--popover script from getbootstrap.com-->
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>

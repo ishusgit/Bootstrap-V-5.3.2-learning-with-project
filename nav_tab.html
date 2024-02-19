@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h4 class="text-center text-info my-3 text-decoration-underline">Welcome to NAV-TAB Component in Bootstrap V-5.3.2</h4>
+    <h5 class="text-start text-danger text-decoration-underline">Tabs and pills in <span class=" text-uppercase border-outline-warning mb-3">(nav)and (ul) tags:</span></h5>
+    <!--<nav> tag-->
+        <div class="container my-3">
+        <nav class="nav nav-underline mb-4 justify-content-center border border-outline-warning">
+            <a href="nav_tab.html" class="nav-link active text-warning" aria-current="true">Nav-TAB-PILL</a>
+            <a href="alert.html" class="nav-link">Alert</a>
+            <a href="badges.html" class="nav-link">Badges</a>
+            <a href="breadcrumb.html" class="nav-link">Breadcrumb</a>
+            <a href="accodion.html" class="nav-link disabled" aria-disabled="false">Accordion</a>
+        </nav>
+        <!--<ul> tag-->
+        <ul class="nav nav-underline justify-content-end border border-outline-success mb-4">
+            <li class="nav-item"><a href="alert.html" class="nav-link">Alert</a></li>
+            <li class="nav-item"><a href="nav_tab.html" class="nav-link active text-success">NAV-TAB-PILL</a></li>
+            <li class="nav-item"><a href="badges.html" class="nav-link">Badges</a></li>
+            <li class="nav-item"><a href="breadcrumb.html" class="nav-link disabled">Breadcrumb</a></li>
+            <li class="nav-item"><a href="accodion.html" class="nav-link"></a></li>
+            </ul>
+            <!--vertical-->
+            <nav class="flex-column align-items-start nav-underline border w-50 mb-4">
+                <a href="nav_tab.html" class="nav-link active text-primary">NAV-TAB-PILL</a>
+                <a href="card.html" class="nav-link">Cards</a>
+                <a href="carousel.html" class="nav-link">Carousel</a>
+                <a href="dropdown.html" class="nav-link">dropdown</a>
+                <a href="button_group.html" class="nav-link disabled">button-Group</a>
+            </nav>
+    </div>
+    <h5 class="text-danger text-decoration-underline text-uppercase">
+        nav-tabs
+    </h5>
+    <div class="container my-3">
+        <nav class="nav nav-tabs">
+           <a href="nav_tab.html" class="nav-link active text-success" aria-current="true">NAV-TABS</a>
+           <a href="navbar.html" class="nav-link">Navbar</a>
+           <a href="closing_button.html" class="nav-link">Closing Button</a>
+           <a href="collapse.html" class="nav-link">Collapse</a>
+           <a href="pagination.html" class="nav-link disabled" aria-disabled="true">Pagination</a>
+        </nav>
+        <nav class="nav nav-tabs my-4">
+            <a href="nav_tab.html" class="nav-link">Nav-tabs</a>
+            <a href="navbar.html" class="nav-link">Navbar</a>
+            <a href="closing_button.html" class="nav-link active text-warning" aria-current="true">CLOSING BUTTON</a>
+            <a href="collapse.html" class="nav-link">Collapse</a>
+            <a href="pagination.html" class="nav-link disabled" aria-disabled="true">Pagination</a>
+        </nav>
+    </div>
+    <!--nav-pills-->
+    <h5 class="text-danger text-decoration-underline text-uppercase">
+        nav-pills
+    </h5>
+    <div class="container my-3">
+        <nav class="nav nav-pills my-3">
+            <a href="nav_tab.html" class="nav-link active" aria-current="true">NAV-PILLS</a>
+           <a href="navbar.html" class="nav-link">Navbar</a>
+           <a href="closing_button.html" class="nav-link">Closing Button</a>
+           <a href="collapse.html" class="nav-link">Collapse</a>
+           <a href="pagination.html" class="nav-link disabled" aria-disabled="true">Pagination</a>
+        </nav>
+        <!--all active items-->
+        <nav class="nav nav-pills my-3">
+            <a href="nav_tab.html" class="nav-link active text-white" aria-current="true">NAV-PILLS</a>
+           <a href="navbar.html" class="nav-link border border-outline-danger">Navbar</a>
+           <a href="closing_button.html" class="nav-link  border border-outline-danger">Closing Button</a>
+           <a href="collapse.html" class="nav-link border border-outline-danger">Collapse</a>
+           <a href="pagination.html" class="nav-link disabled" aria-disabled="true">Pagination</a>
+        </nav>
+        <!--nav-fill--(not equal width occupied)-->
+        <h6 class="text-success my-3">nav-fill(not equal width items-horizontal space occupied)</h6>
+        <nav class="nav nav-pills nav-fill my-2">
+            <a href="nav_tab.html" class="nav-link active text-white" aria-current="true">NAV-PILLS</a>
+           <a href="navbar.html" class="nav-link active text-white">Navbar</a>
+           <a href="closing_button.html" class="nav-link active text-white">Closing Button</a>
+           <a href="collapse.html" class="nav-link active text-white">Collapse</a>
+           <a href="pagination.html" class="nav-link disabled text-white" aria-disabled="true">Pagination</a>
+        </nav>
+        <!--nav-justified--(equal width occupied)-->
+        <h6 class="text-warning my-3">nav-justified(all equal width items-horizontal space occupied)</h6>
+        <nav class="nav nav-pills nav-justified my-2">
+            <a href="nav_tab.html" class="nav-link active" aria-current="true">NAV-PILLS</a>
+           <a href="navbar.html" class="nav-link border border-outline-success">Navbar</a>
+           <a href="closing_button.html" class="nav-link border border-outline-success">Closing Button</a>
+           <a href="collapse.html" class="nav-link border border-outline-success">Collapse</a>
+           <a href="pagination.html" class="nav-link border border-outline-success" aria-disabled="true">Pagination</a>
+        </nav>
+        <!--vertical pills-->
+        <!--nav-fill--(not equal width occupied)-->
+        <h6 class="text-success my-3">nav-fill(not equal width items-horizontal space occupied) in VERTICAL</h6>
+        <nav class="nav nav-pills nav-fill my-2 flex-column">
+            <a href="nav_tab.html" class="nav-link active text-white" aria-current="true">NAV-PILLS</a>
+           <a href="navbar.html" class="nav-link active text-white">Navbar</a>
+           <a href="closing_button.html" class="nav-link active text-white">Closing Button</a>
+           <a href="collapse.html" class="nav-link active text-white">Collapse</a>
+           <a href="pagination.html" class="nav-link disabled text-white" aria-disabled="true">Pagination</a>
+        </nav>
+        <!--nav-justified--(equal width occupied)-->
+        <h6 class="text-warning my-3">nav-justified(all equal width items-horizontal space occupied) in VERTICAL</h6>
+        <nav class="nav nav-pills nav-justified my-2 flex-column">
+            <a href="nav_tab.html" class="nav-link active" aria-current="true">NAV-PILLS</a>
+           <a href="navbar.html" class="nav-link border border-outline-success">Navbar</a>
+           <a href="closing_button.html" class="nav-link border border-outline-success">Closing Button</a>
+           <a href="collapse.html" class="nav-link border border-outline-success">Collapse</a>
+           <a href="pagination.html" class="nav-link border border-outline-success" aria-disabled="true">Pagination</a>
+        </nav>
+        <h6 class="text-success my-3">Vertical in EXTRA SMALL,SMALL screen and Horizontal in MEDIUM,LARGE,EXTRA LARGE screen  </h6>
+        <nav class="nav nav-pills my-3 flex-column flex-md-row ">
+            <a href="nav_tab.html" class="nav-link active" aria-current="true">NAV-PILLS</a>
+           <a href="navbar.html" class="nav-link">Navbar</a>
+           <a href="closing_button.html" class="nav-link">Closing Button</a>
+           <a href="collapse.html" class="nav-link">Collapse</a>
+           <a href="pagination.html" class="nav-link disabled" aria-disabled="true">Pagination</a>
+        </nav>
+    </div>
+    <div class="container my-3">
+    <h5 class="text-dark my-3 text-decoration-underline">NAV-TABS(javascript behaviour)</h5>
+    <div class="my-3 border border-outline-danger w-50">
+    <ul class="nav nav-tabs" id="nav-tabs" role="tablist">
+        <li class="nav-item"><a href="nav_tab.html" class="nav-link active text-success fw-bolder" role="tab"
+            data-bs-toggle="tab" data-bs-target="#nav-tab-nav" aria-controls="nav-tab-nav"
+            id="nav-nav" aria-selected="true">NAV-TAB</a>
+        </li>
+        <li class="nav-item"><a href="alert.html" class="nav-link fw-bolder" role="tab"
+            data-bs-toggle="tab" data-bs-target="#nav-tab-alert" aria-controls="nav-tab-alert"
+            id="nav-alert" aria-selected="true">Alert</a>
+        </li>
+        <li class="nav-item"><a href="breadcrumb.html" class="nav-link fw-bolder" role="tab"
+            data-bs-toggle="tab" data-bs-target="#nav-tab-breadcrumb" aria-controls="nav-tab-breadcrumb"
+            id="nav-breadcrumb" aria-selected="true">Breadcrumb</a>
+        </li>
+        <li class="nav-item"><a href="collapse.html" class="nav-link fw-bolder" role="tab"
+            data-bs-toggle="tab" data-bs-target="#nav-tab-collapse" aria-controls="nav-tab-collapse"
+            id="nav-collapse" aria-selected="true">Collapse</a>
+        </li>
+        <li class="nav-item"><a href="dropdown.html" class="nav-link disabled fw-lighter" role="tab"
+            data-bs-toggle="tab" data-bs-target="#nav-tab-dropdown" aria-controls="nav-tab-dropdown"
+            id="nav-dropdown" aria-selected="true">Dropdown</a>
+        </li>    
+    </ul>
+    <div class="tab-content my-3 mx-3" id="nav-content">
+        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-nav" id="nav-tab-nav"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-alert" id="nav-tab-alert"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-breadcrumb" id="nav-tab-breadcrumb"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-collapse" id="nav-tab-collapse"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-dropdown" id="nav-tab-dropdown"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+    </div>
+</div>
+<!--nav-pills javascript behaviour-->
+<h5 class="text-dark my-3 text-decoration-underline">NAV-PILLS(javascript behaviour)</h5>
+    <div class="my-3 border border-outline-danger w-50">
+    <ul class="nav nav-pills" id="nav-tabs" role="tablist">
+        <li class="nav-item"><a href="nav_tab.html" class="nav-link active fw-bolder" role="tab"
+            data-bs-toggle="pill" data-bs-target="#nav-pill-nav" aria-controls="nav-pill-nav"
+            id="nav-navs" aria-selected="true">NAV-TAB</a>
+        </li>
+        <li class="nav-item"><a href="alert.html" class="nav-link fw-bolder" role="tab"
+            data-bs-toggle="pill" data-bs-target="#nav-pill-alert" aria-controls="nav-pill-alert"
+            id="nav-alerts" aria-selected="true">Alert</a>
+        </li>
+        <li class="nav-item"><a href="breadcrumb.html" class="nav-link fw-bolder" role="tab"
+            data-bs-toggle="pill" data-bs-target="#nav-pill-breadcrumb" aria-controls="nav-pill-breadcrumb"
+            id="nav-breadcrumbs" aria-selected="true">Breadcrumb</a>
+        </li>
+        <li class="nav-item"><a href="collapse.html" class="nav-link fw-bolder" role="tab"
+            data-bs-toggle="pill" data-bs-target="#nav-pill-collapse" aria-controls="nav-pill-collapse"
+            id="nav-collapses" aria-selected="true">Collapse</a>
+        </li>
+        <li class="nav-item"><a href="dropdown.html" class="nav-link disabled fw-lighter" role="tab"
+            data-bs-toggle="pill" data-bs-target="#nav-pill-dropdown" aria-controls="nav-pill-dropdown"
+            id="nav-dropdowns" aria-selected="true">Dropdown</a>
+        </li>    
+    </ul>
+    <div class="tab-content my-3 mx-3" id="nav-content">
+        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-navs" id="nav-pill-nav"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-alerts" id="nav-pill-alert"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-breadcrumbs" id="nav-pill-breadcrumb"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-collapses" id="nav-pill-collapse"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-dropdowns" id="nav-pill-dropdown"
+        tabindex="0">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+         labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+        </div>
+    </div>
+</div>
+</div>
+<!--using dropdowns-->
+<!--dropdown in tabs-->
+<ul class="nav nav-tabs my-4 mx-4">
+    <li class="nav-item">
+        <a href="nav_tab.html" class="nav-link active" aria-current="true">Nav-tabs and pills</a>
+    </li>
+    <li class="nav-item">
+        <a href="alert.html" class="nav-link">Alert</a>
+    </li>
+    <li class="nav-item dropdown dropdown-center">
+        <a href="dropdown.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+        <ul class="dropdown-menu my-3">
+            <a href="closing_button.html" class="dropdown-item">Closing-Button</a>
+            <a href="carousel.html" class="dropdown-item">Carousel</a>
+            <a href="badges.html" class="dropdown-item">Badges</a>
+            <a href="card.html" class="dropdown-item">card</a>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="breadcrumb.html" class="nav-link">breadcrumb</a>
+    </li>
+    <li class="nav-item">
+        <a href="accodion.html" class="nav-link disabled" aria-disabled="true">Accordion</a>
+    </li>
+</ul>
+<!--dropdown in pills-->
+<ul class="nav nav-pills nav-fill my-4 mx-4">
+    <li class="nav-item">
+        <a href="nav_tab.html" class="nav-link active" aria-current="true">Nav-tabs and pills</a>
+    </li>
+    <li class="nav-item">
+        <a href="alert.html" class="nav-link">Alert</a>
+    </li>
+    <li class="nav-item">
+        <a href="breadcrumb.html" class="nav-link">breadcrumb</a>
+    </li>
+    <li class="nav-item dropdown dropdown-center">
+        <a href="dropdown.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+        <ul class="dropdown-menu my-3">
+            <a href="closing_button.html" class="dropdown-item">Closing-Button</a>
+            <a href="carousel.html" class="dropdown-item">Carousel</a>
+            <a href="badges.html" class="dropdown-item">Badges</a>
+            <a href="card.html" class="dropdown-item">card</a>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="accodion.html" class="nav-link disabled" aria-disabled="true">Accordion</a>
+    </li>
+</ul>
+    
+<!--tab-panel in vertical-->
+<!--<div class="container my-4 mx-4">
+    <h6 class="text-center text-danger">Tab-Panel in vertical</h6>
+    <div class="d-flex align-items-start border my-3">
+        <nav class="nav nav-pills nav-fill flex-column me-5" id="nav-tabss" role="tablist" aria-orientation="vertical">
+           <a href="nav_tab.html" class="nav-link active" id="nav-navsss" role="tab" aria-selected="true"
+           data-bs-toggle="pill" data-bs-target="#nav-navss" aria-controls="#nav-navss"
+            type="button">Nav-Tab-Pills</a>
+            <a href="alert.html" class="nav-link" id="nav-alertsss" role="tab" aria-selected="false"
+           data-bs-toggle="pill" data-bs-target="#nav-alertss" aria-controls="#nav-alertss"
+            type="button">Alert</a>
+            <a href="badges.html" class="nav-link" id="nav-badgesss" role="tab" aria-selected="false"
+           data-bs-toggle="pill" data-bs-target="#nav-badgess" aria-controls="#nav-badgess"
+            type="button">Badges</a>
+            <a href="collapse.html" class="nav-link" id="nav-collapsesss" role="tab" aria-selected="false"
+           data-bs-toggle="pill" data-bs-target="#nav-collapsess" aria-controls="#nav-collapsess"
+            type="button">Collapse</a>
+            <a href="card.html" class="nav-link disabled" aria-selected="false" id="nav-cardss" role="tab"
+           data-bs-toggle="pill" data-bs-target="#nav-cards" aria-controls="#nav-cards"
+            type="button">Cards</a>
+        </nav>
+        <div class="tab-content my-3" id="nav-tabss-contents">
+            <div class="tab-pane" id="nav-navss" aria-labelledby="nav-navsss" role="tabpanel" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem a ducimus, commodi dolor soluta earum quidem ex iure natus,
+                 ratione non asperiores laboriosam porro odit!
+            </div>
+            <div class="tab-pane" id="nav-alertss" aria-labelledby="nav-alertsss" role="tabpanel" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem a ducimus, commodi dolor soluta earum quidem ex iure natus,
+                 ratione non asperiores laboriosam porro odit!
+            </div>
+            <div class="tab-pane" id="nav-badgess" aria-labelledby="nav-badgesss" role="tabpanel" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem a ducimus, commodi dolor soluta earum quidem ex iure natus,
+                 ratione non asperiores laboriosam porro odit!
+            </div>
+            <div class="tab-pane" id="nav-collapsess" aria-labelledby="nav-collapsesss" role="tabpanel" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem a ducimus, commodi dolor soluta earum quidem ex iure natus,
+                 ratione non asperiores laboriosam porro odit!
+            </div>
+            <div class="tab-pane" id="nav-cards" aria-labelledby="nav-cardss" role="tabpanel" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem a ducimus, commodi dolor soluta earum quidem ex iure natus,
+                 ratione non asperiores laboriosam porro odit!
+            </div>
+        </div>
+    </div>
+</div>-->
+<h6 class="text-center text-danger my-5">Tab-Panel in vertical</h6>
+<div class="d-flex align-items-start my-5 border w-50 mx-5">
+<ul class="nav nav-pills flex-column me-5" id="nav-tabs" role="tablist" aria-orientation="vertical">
+    <li class="nav-item mb-2"><a href="nav_tab.html" class="nav-link active fw-bolder" role="tab"
+        data-bs-toggle="pill" data-bs-target="#nav-pill-na" aria-controls="nav-pill-na"
+        id="nav-na" aria-selected="true">NAV-TAB</a>
+    </li>
+    <li class="nav-item mb-2"><a href="alert.html" class="nav-link fw-bolder" role="tab"
+        data-bs-toggle="pill" data-bs-target="#nav-pill-aler" aria-controls="nav-pill-aler"
+        id="nav-aler" aria-selected="true">Alert</a>
+    </li>
+    <li class="nav-item mb-2"><a href="breadcrumb.html" class="nav-link fw-bolder" role="tab"
+        data-bs-toggle="pill" data-bs-target="#nav-pill-breadcrum" aria-controls="nav-pill-breadcrum"
+        id="nav-breadcrum" aria-selected="true">Breadcrumb</a>
+    </li>
+    <li class="nav-item mb-2"><a href="collapse.html" class="nav-link fw-bolder" role="tab"
+        data-bs-toggle="pill" data-bs-target="#nav-pill-collaps" aria-controls="nav-pill-collaps"
+        id="nav-collaps" aria-selected="true">Collapse</a>
+    </li>
+    <li class="nav-item mb-2"><a href="dropdown.html" class="nav-link disabled fw-lighter" role="tab"
+        data-bs-toggle="pill" data-bs-target="#nav-pill-dropdow" aria-controls="nav-pill-dropdow"
+        id="nav-dropdow" aria-selected="true">Dropdown</a>
+    </li>    
+</ul>
+<div class="tab-content my-3 mx-3" id="nav-content">
+    <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-na" id="nav-pill-na"
+    tabindex="0">
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+     labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+    </div>
+    <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-aler" id="nav-pill-aler"
+    tabindex="0">
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+     labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+    </div>
+    <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-breadcrum" id="nav-pill-breadcrum"
+    tabindex="0">
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+     labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+    </div>
+    <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-collaps" id="nav-pill-collaps"
+    tabindex="0">
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+     labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+    </div>
+    <div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-dropdow" id="nav-pill-dropdow"
+    tabindex="0">
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo sapiente dolorem sit officiis itaque, 
+     labore quae officia. Tempore, aliquam non eveniet fugit commodi error.
+    </div>
+</div>
+</div>
+    
+    
+
+
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

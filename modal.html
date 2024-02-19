@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h5 class="text-center text-danger my-3">Welcome to MODAL in Bootstrap V-5.3.2</h5>
+    <div class="container my-3 border">
+        <h6 class="text-info mt-4 text-decoration-underline text-uppercase">basic example:</h6>
+        <div class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title">modal title</h6>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Quam incidunt, illum ea ullam dolorum id?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--button triggers the modal-->
+        <h6 class="text-info mt-4 text-decoration-underline text-uppercase">button triggers the modal</h6>
+        <button class="mt-4 btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#modalIdname">Button Triggers Modal</button>
+        <div class="modal fade" tabindex="-1" id="modalIdname">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Modal title</h6>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Quam incidunt, illum ea ullam dolorum id?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--static backdrop-->
+        <h6 class="text-info mt-4 text-decoration-underline text-uppercase">Static Backdrop</h6>
+        <button class="mt-4 btn btn-danger text-white" data-bs-toggle="modal" data-bs-target="#backdropmodalidname">Button Triggers Modal</button>
+        <div class="modal fade" id="backdropmodalidname" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fs-5 fw-bolder fst-italic">Modal title</h6>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore quia quaerat architecto error. 
+                            Nihil provident, quasi fugiat accusamus eveniet aspernatur omnis minima mollitia error.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--scrollable modal-->
+        <h6 class="text-info mt-4 text-decoration-underline text-uppercase">scrollable modal</h6>
+        <button class="mt-4 btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#scrollablemodalidname">Scrollable Modal</button>
+        <div class="modal fade" id="scrollablemodalidname" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fs-5">Modal title</h6>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore quia quaerat architecto error. 
+                            Nihil provident, quasi fugiat accusamus eveniet aspernatur omnis minima mollitia error.</p>
+                        <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nam corporis, ex ab possimus aliquid, nesciunt totam necessitatibus magnam consequuntur, voluptatem omnis tempora qui blanditiis est? Asperiores assumenda sed reprehenderit accusantium quos corrupti at quidem praesentium totam similique excepturi commodi, molestias dicta natus ipsum tempora ipsa eius obcaecati error cupiditate nesciunt. Numquam architecto ullam nobis mollitia adipisci voluptatem dignissimos earum perspiciatis omnis voluptas harum, aut officiis ducimus placeat. Ut eos repudiandae, cumque perferendis eligendi excepturi veniam doloribus placeat architecto commodi. Praesentium aut totam error,
+                             voluptatibus quis cum quidem! Deleniti aliquid ipsam quas ipsum minima quasi esse nihil, magni optio odio!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <hr>
+       <!--vertically centered with scrollable-->
+       <h6 class="text-info mt-4 text-decoration-underline text-uppercase">vertical centered modal</h6>
+        <button class="mt-4 btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#centeredmodalidname">Vertical centered Modal</button>
+        <div class="modal fade" id="centeredmodalidname" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fs-5">Modal title</h6>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem dolor sit amet consectetur adipisicing elit. Aliquid labore quia quaerat architecto error. 
+                            Nihil provident, quasi fugiat accusamus eveniet aspernatuipsum dolor sit amet consectetur adipisicing elit. Aliquid labore quia quaerat architecto error. 
+                            Nihil provident, quasi fugiat accusamus eveniet aspernatur omnis minima mollitia error.</p>
+                        asi esse nihil,quasi </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <hr>
+       <!--tooltip and popover in modal-->
+       <h6 class="text-info mt-4 text-decoration-underline text-uppercase">Static Backdrop</h6>
+        <button class="mt-4 btn btn-success text-white" data-bs-toggle="modal" data-bs-target="#toolpopmodalidname">Button Triggers Modal</button>
+        <div class="modal fade" id="toolpopmodalidname" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fs-5 fw-bolder fst-italic">Modal title</h6>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="fs-6 fst-italic">Popover in title</h5>
+                        <p class="text-danger p-3">This is <button class="btn btn-warning text-white" data-bs-toggle="popover"
+                            data-bs-title="popover-title" data-bs-content="hai this is popover content in modal component in bootstrap v.5.3.2.
+                            ">button</button> us eveniet aspernatur omnis minima mollitia error.</p>
+                            <hr>
+                            <h5 class="fs-6 fst-italic">Tooltip in title</h5> 
+                            <p class="text-info p-3">This <a href="#" data-bs-toggle="tooltip" data-bs-title="tooltip">link</a>
+                             and <a href="#" data-bs-toggle="tooltip" dat-bs-title="tooltip">that link</a> is a tooltip content in modal.</p> 
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--toggle between modals-->
+        <h6 class="text-info mt-4 text-decoration-underline text-uppercase">Toggle between modals</h6>
+        <!--open modal 1 button-->
+        <button class="btn btn-secondary text-white" data-bs-toggle="modal" data-bs-target="#modal-2-idname">Open modal-1</button>
+        <!--open modal 2 content-->
+        <div class="modal fade" id="modal-2-idname" tabindex="-1">
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       
+                          <h5 class="fs-5 modal-title">Modal-1 Title</h5>
+                          <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                    </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nesciunt voluptates non,
+                             quod sit odio perferendis cumque nobis odit perspiciatis, blanditiis aut quam natus laborum.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning" data-bs-target="#modal-1-idname" data-bs-toggle="modal">Open modal-2</button>
+                        </div>
+                
+                </div>
+              </div>
+        </div>
+        <!--open modal 2 content-->
+        <div class="modal fade" id="modal-1-idname" tabindex="-1">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      
+                        <h5 class="fs-5 modal-title">Modal-1 Title</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                      
+                      </div>
+                      <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nesciunt voluptates non,
+                           quod sit odio perferendis cumque nobis odit perspiciatis, blanditiis aut quam natus laborum.</p>
+                      </div>
+                      <div class="modal-footer">
+                          <button class="btn btn-primary" data-bs-target="#modal-2-idname" data-bs-toggle="modal">Open modal-1</button>
+                      </div>
+                  
+              </div>
+            </div>
+      </div>
+      <hr>
+      <!--varying modal-->
+      <h6 class="text-info mt-4 text-decoration-underline text-uppercase">varying modals</h6>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+        
+
+
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+    const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+<!--popover js code-->
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+    <!--this is default in getbbotstrap.com for TOOLTIP enabling-->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+     </script>
+     <!--varying modal-->
+     <script>
+     const exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
+  exampleModal.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button = event.relatedTarget
+    // Extract info from data-bs-* attributes
+    const recipient = button.getAttribute('data-bs-whatever')
+    // If necessary, you could initiate an Ajax request here
+    // and then do the updating in a callback.
+
+    // Update the modal's content.
+    const modalTitle = exampleModal.querySelector('.modal-title')
+    const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+    modalTitle.textContent = `New message to ${recipient}`
+    modalBodyInput.value = recipient
+  })
+}
+</script>
+</body>
+</html>

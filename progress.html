@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h5 class="text-dark text-center my-3">Welcome to PROGRESS in Bootstrap V-5.3.2</h5>
+    <!--normal progress bar-->
+    <div class="container mt-4 border">
+        <!--normal progress bar-->
+        <h6 class="text-success mt-3 text-decoration-underline text-uppercase">progress bar example</h6>
+        <div class="progress mt-4" role="progressbar" aria-label="progressbarexample" aria-valuenow="20"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width:20%"></div>
+        </div>
+        <!--progress bar with bar sizing-(width and height)-->
+        <h6 class="text-success mt-3 text-decoration-underline text-uppercase">progressbar-bar sizing(width and height)</h6>
+        <div class="progress mt-4" role="progressbar" aria-label="progressbarexample" aria-valuenow="50"
+        aria-valuemin="0" aria-valuemax="100" style="height:25px;">
+        <div class="progress-bar w-50" ></div>
+        </div>
+        <!--progress bar with labels)-->
+        <h6 class="text-success mt-3 text-decoration-underline text-uppercase">progressbar-bar with label</h6>
+        <div class="progress mt-4" role="progressbar" aria-label="progressbarexample" aria-valuenow="35"
+        aria-valuemin="0" aria-valuemax="100" >
+        <div class="progress-bar" style="width:35%" >35%</div>
+        </div>
+        <!--progress bar with labels in overflow:visible)-->
+        <h6 class="text-success mt-3 text-decoration-underline text-uppercase">progressbar-bar with label</h6>
+        <div class="progress mt-4" role="progressbar" aria-label="progressbarexample" aria-valuenow="15"
+        aria-valuemin="0" aria-valuemax="100" >
+        <div class="progress-bar overflow-visible text-warning" style="width:15%" >By default,content inside progress-bar 
+            class is controlled with overflow:hidden.To change this use overflow:visible in progress-bar class.</div>
+        </div>
+        <!--progress bar with backgrounds and labels-->
+        <h6 class="text-success mt-3 text-decoration-underline text-uppercase">progressbar-bar with backgrounds and label</h6>
+        <div class="progress mt-4" role="progressbar" aria-label="progressbarexample" aria-valuenow="50"
+        aria-valuemin="0" aria-valuemax="100" >
+        <div class="progress-bar bg-danger text-bg-white" style="width:50%" >50%</div>
+        </div>
+        <div class="progress mt-4" role="progressbar" aria-label="progressbarexample" aria-valuenow="25"
+        aria-valuemin="0" aria-valuemax="100" >
+        <div class="progress-bar bg-warning text-bg-warning" style="width:25%" >25%</div>
+        </div>
+        <div class="progress mt-4" role="progressbar" aria-label="progressbarexample" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100" >
+        <div class="progress-bar bg-success text-bg-white" style="width:75%" >75%</div>
+        </div>
+        <!--multiple bars-->
+        <h6 class="text-success mt-3 text-decoration-underline text-uppercase">multiple-bars</h6>
+        <!--<div class="progress-stacked">
+          <div class="progress mt-3" role="progressbar" aria-label="progressbarexample1" aria-valuenow="20"
+        aria-valuemin="0" aria-valuemax="130" style="width:20%">
+           <div class="progress-bar bg-dark"></div>
+          </div>
+          <div class="progress mt-3" role="progressbar" aria-label="progressbarexample2" aria-valuenow="65"
+        aria-valuemin="0" aria-valuemax="130" style="width:65%">
+           <div class="progress-bar bg-success"></div>
+          </div>
+          <div class="progress mt-3" role="progressbar" aria-label="progressbarexample3" aria-valuenow="15"
+          aria-valuemin="0" aria-valuemax="130" style="width:15%" >
+           <div class="progress-bar bg-info"></div>
+           </div>
+        </div>-->
+        <div class="progress-stacked">
+            <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
+              <div class="progress-bar">HTML</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+              <div class="progress-bar bg-success">CSS</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+              <div class="progress-bar bg-info">BOOTSTRAP</div>
+            </div>
+          </div>
+          <!--striped bars-->
+        <h6 class="text-success mt-3 text-decoration-underline text-uppercase">striped-bars</h6>
+        <div class="progress mt-3" role="progressbar" aria-label="progressbarexample" aria-valuenow="65"
+        aria-valuemin="0" aria-valuemax="100" >
+        <div class="progress-bar progress-bar-striped bg-danger text-bg-white" style="width:65%" >65%</div>
+        </div>
+        <!--animated striped bars-->
+        <h6 class="text-success mt-3 text-decoration-underline text-uppercase">Animated striped-bars</h6>
+        <div class="progress mt-4" role="progressbar" aria-label="progressbarexample" aria-valuenow="47"
+        aria-valuemin="0" aria-valuemax="100" >
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-bg-warning" style="width:47%" >47%</div>
+        </div>
+    </div>
+        
+
+
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

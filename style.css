@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/**.carousel-control-prev::before{
+    content:'';
+    position:absolute;
+    border-radius:50%;
+    border:none;
+    background:red;
+    width:30px;
+    height:30px;
+    top:-270px;
+    left:20px;
+    padding:10px;
+   
+}
+
+.carousel-control-prev-icon{
+    z-index:10000;
+    position:absolute;
+    color:blue;
+}**/
+/**.carousel-control-prev{
+    position:absolute;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    padding:10px;
+    z-index:10000;
+    background:red;
+}**/

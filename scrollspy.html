@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h5 class="text-center text-primary my-3">Welcome to SCROLLSPY in Bootstrap V-5.3.2</h5>
+    <div class="container my-3 border">
+       <!--scrollspy in navbar-->
+       <h4 class="text-danger text-decoration-underline text-uppercase mt-4">scrollspy in navbar</h4>
+       <nav id="scrollspynavbarid" class="navbar navbar-expand-lg mt-4 mx-4 text-light bg-body-secondary px-3 mb-4">
+          <a href="" class="navbar-brand">Navbar</a>
+          <ul class="nav nav-pills ms-auto">
+            <li class="nav-item"><a href="#nav-item-first" class="nav-link">First Item</a></li>
+            <li class="nav-item"><a href="#nav-item-second" class="nav-link">second Item</a></li>
+            <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#nav-item-dropdown-first" class="dropdown-item">First-Dropdown Item</a></li>
+                        <li><a href="#nav-item-dropdown-second" class="dropdown-item">Second-Dropdown Item</a></li>
+                        <li><a href="#nav-item-dropdown-third" class="dropdown-item">Third-Dropdown Item</a></li>
+                    </ul>
+            </li>
+            <li class="nav-item"><a href="#nav-item-third" class="nav-link">Third Item</a></li>
+          </ul>
+       </nav>
+       <div class="scrollspy rounded-3 border p-3 overflow-y-scroll" style="height:200px;" data-bs-spy="scroll" data-bs-root-margin="0px 0px -40%" data-bs-target="#scrollspynavbarid" data-bs-smooth-scroll="true"
+       tabindex="0" data-bs-smooth-scroll="true" >
+           <h4 id="nav-item-first">First Heading</h4>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi culpa architecto modi, 
+            ab debitis fugiat vero,
+             voluptatem suscipit unde rem dignissimos ratione quisquam, ut ipsum?</p><br>
+             <h4 id="nav-item-second">second Heading</h4>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi culpa architecto modi, 
+            ab debitis fugiat vero,
+             voluptatem suscipit unde rem dignissimos ratione quisquam, ut ipsum?</p><br>
+             <h4 id="nav-item-dropdown-first">First dropdown Heading</h4>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi culpa architecto modi, 
+            ab debitis fugiat vero,
+             voluptatem suscipit unde rem dignissimos ratione quisquam, ut ipsum?</p><br>
+             <h4 id="nav-item-dropdown-second">Second dropdown Heading</h4>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi culpa architecto modi, 
+            ab debitis fugiat vero,
+             voluptatem suscipit unde rem dignissimos ratione quisquam, ut ipsum?</p><br>
+             <h4 id="nav-item-dropdown-third">Third dropdown Heading</h4>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi culpa architecto modi, 
+            ab debitis fugiat vero,
+             voluptatem suscipit unde rem dignissimos ratione quisquam, ut ipsum?</p><br>
+             <h4 id="nav-item-third">third Heading</h4>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi culpa architecto modi, 
+            ab debitis fugiat vero,
+             voluptatem suscipit unde rem dignissimos ratione quisquam, ut ipsum?</p>
+       </div>
+       <hr>
+       <!--nested nav-->
+       <h4 class="text-danger text-decoration-underline text-uppercase mt-4">scrollspy in nested navbar</h4>
+       <div class="row my-5">
+        <div class="col-4">
+            <nav class="nav-pills flex-column  align-items-stretch border-end ms-3 pe-3" id="scrollspynestednav">
+               <a href="#item1nested" class="nav-link ">Item-1</a>
+               <!--nested navbar-->
+                  <nav class="nav-pills nav  flex-column">
+                    <a href="#item1-1nested" class="nav-link ">Item-1.1</a>
+                    <a href="#item1-2nested" class="nav-link ">Item-1.2</a>
+                  </nav>
+                <a href="#item3nested" class="nav-link">Item-3</a>  
+            </nav>
+        </div>
+        <div class="col-8">
+            <div class="scrollspy rounded-2 pt-3 border px-4 overflow-y-scroll" style="height:150px;" data-bs-spy="scroll" data-bs-target="#scrollspynestednav"
+            data-bs-smooth-scroll="true" tabindex="0">
+                <div id="item1nested">
+                    <h4>Item-1 heading</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Explicabo dolore eum totam mollitia deleniti voluptate.</p>
+                </div>
+                <div id="item1-1nested">
+                    <h4>Item-1.1 heading</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Explicabo dolore eum totam mollitia deleniti voluptate.</p>
+                </div>
+                <div id="item1-2nested">
+                    <h4>Item-1.2 heading</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Explicabo dolore eum totam mollitia deleniti voluptate.</p>
+                </div>
+                <div id="item3nested">
+                    <h4>Item-3 heading</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Explicabo dolore eum totam mollitia deleniti voluptate.</p>
+                </div>
+                
+            </div>
+        </div>
+       </div>
+       <hr>
+       <!--scrollspy in list-group-->
+       <h4 class="text-danger text-decoration-underline text-uppercase mt-4">scrollspy in list-group</h4>
+       <div class="row">
+        <div class="col-4">
+            <div id="list-group-scroll" class="list-group my-5">
+                <a href="#listgroupitemone" class="list-group-item list-group-item-action">List-Group-1</a>
+                <a href="#listgroupitemtwo" class="list-group-item list-group-item-action">List-Group-2</a>
+                <a href="#listgroupitemthree" class="list-group-item list-group-item-action">List-Group-3</a>
+            </div>
+        </div>
+        <div class="col-8 my-5">
+            <div class="scrollspy rounded-2 border py-3 px-4 overflow-y-scroll" data-bs-target="#list-group-scroll" data-bs-smooth-scroll="true"
+            data-bs-spy="scroll" tabindex="0" style="height:180px;">
+                  <h4 id="listgroupitemone">List-group-1-heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ex id dolores numquam, repudiandae officia quam!</p>
+                     <h4 id="listgroupitemtwo">List-group-2-heading</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ex id dolores numquam, repudiandae officia quam!</p>
+                        <h4 id="listgroupitemthree">List-group-3-heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ex id dolores numquam, repudiandae officia quam!</p>
+          </div>
+        </div>
+       </div>
+      <hr>
+      <!--scrollspy in anchor tags(links)-->
+      <h4 class="text-danger text-decoration-underline text-uppercase mt-4">scrollspy in links</h4>
+      <div class="row">
+        <div class="col-4">
+            <div id="anchor-scrollspy" class="d-flex flex-column text-center gap-3 my-4 p-3 border round-2">
+                 <a href="#link-item-1" class="p-1">Link-Item-1</a>
+                 <a href="#link-item-2" class="p-1">Link-Item-2</a>
+                 <a href="#link-item-3" class="p-1">Link-Item-3</a>
+                 <a href="#link-item-4" class="p-1">Link-Item-4</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="scrollspy overflow-y-scroll border rounded-2 my-4 py-3 px-4" data-bs-target="#anchor-scrollspy"
+            data-bs-spy="scroll" data-bs-smooth-scroll="true" style="height:180px;" tabindex="0">
+            <h4 id="link-item-1">Link-item-1-heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ex id dolores numquam, repudiandae officia quam!</p>
+                     <h4 id="link-item-2">Link-item-2-heading</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ex id dolores numquam, repudiandae officia quam!</p>
+                        <h4 id="link-item-3">Link-item-3-heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ex id dolores numquam, repudiandae officia quam!</p>
+                     <h4 id="link-item-4">Link-item-4-heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ex id dolores numquam, repudiandae officia quam!</p>
+        </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    
+    
+        
+<hr>
+
+
+
+
+    
+</script>
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

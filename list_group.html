@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-5</title>
+    <!--Bootstrap-5 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h5 class="text-center text-warning my-5">Welcome to List-Group Component in Bootstrap V-5.3</h5>
+    <!--list-group-->
+    <div class="container-md">
+        <div class="row">
+            <div class="col-4 ">
+               <ul class="list-group text-center">
+                   <li class="list-group-item">A First list-group-item</li>
+                   <li class="list-group-item">Second list-group-item</li>
+                   <li class="list-group-item">Third list-group-item</li> 
+                </ul>
+            </div>
+            <!--normal active and disabled class(non-interactive)-->
+            <div class="col-4">
+                <ul class="list-group text-center">
+                    <li class="list-group-item active">Active First list-group-item</li>
+                    <li class="list-group-item">Second list-group-item</li>
+                    <li class="list-group-item">Third list-group-item</li> 
+                    <li class="list-group-item disabled">Disabled list-group-item</li>
+                 </ul>
+            </div>
+            <!--button and anchor tag-(interactive)active and disabled class-->
+            <div class="col-4">
+                <div class="list-group text-center">
+                    <button class="list-group-item list-group-item-action active">Active button list-group-item</button>
+                    <button class="list-group-item list-group-item-action">Active button list-group-item</button>
+                    <button class="list-group-item list-group-item-action">Active button list-group-item</button>
+                    <button class="list-group-item list-group-item-action">Active button list-group-item</button>
+                    <a href="#" class="list-group-item list-group-item-action disabled">Disabled button list-group-item</button>
+                </div>
+            </div>
+        </div>
+    
+    <!--2nd row-->
+    
+        <div class="row my-5">
+            <!--list-group-flush-->
+            <div class="col-3">
+                <div class="list-group list-group-flush text-center">
+                    <li class="list-group-item">First list-group-item</li>
+                    <li class="list-group-item">Second list-group-item</li>
+                    <li class="list-group-item">Third list-group-item</li> 
+                </div>
+            </div>
+            <!--numbered list group-->
+            <div class="col-4">
+               <ol class="list-group list-group-numbered text-start">
+                <li class="list-group-item">One list-group-item</li>
+                <li class="list-group-item">Two list-group-item</li>
+                <li class="list-group-item">Three list-group-item</li>
+                <li class="list-group-item">Four list-group-item</li>
+               </ol>
+            </div>
+            <!--variant bg-color and text-color-->
+            <div class="col-5">
+                <div class="list-group text-center">
+                    <li class="list-group-item list-group-item-action list-group-item-success">One list-group-item with success color</li>
+                    <li class="list-group-item list-group-item-action list-group-item-primary">Two list-group-item with primary color</li>
+                    <li class="list-group-item list-group-item-action list-group-item-danger">Three list-group-item with warning color</li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning">Four list-group-item with danger color</li>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <!--color list-group-->
+    <div class="row">
+        <div class="col-4">
+        <div class="list-group text-lg-center text-sm-start">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+        
+      </div>
+      </div>
+     <div class="col-4">
+      <!--badges-->
+      <div class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">First list-group-item
+            <span class="badge bg-success rounded-pill">1</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Second list-group-item
+            <span class="badge bg-primary rounded-pill">22</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Three list-group-item
+            <span class="badge bg-danger rounded-pill">333</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Four list-group-item
+            <span class="badge bg-warning rounded-pill">4444</span>
+        </li>
+      </div>
+    </div>
+</div>
+<!--horizontal list group-->
+<div class="row my-5">
+    <div class="col-4">
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item list-group-item-action active">First item</li>
+            <li class="list-group-item list-group-item-action">second item</li>
+            <li class="list-group-item list-group-item-action">Third item</li>
+        </ol>
+        <ol class="list-group list-group-horizontal-sm mt-4">
+            <li class="list-group-item list-group-item-action">First item</li>
+            <li class="list-group-item list-group-item-action active">Second item</li>
+            <li class="list-group-item list-group-item-action">Third item</li>
+        </ol>
+        <ol class="list-group list-group-horizontal-md mt-4">
+            <li class="list-group-item list-group-item-action">First item</li>
+            <li class="list-group-item list-group-item-action">Second item</li>
+            <li class="list-group-item list-group-item-action active">Third item</li>
+        </ol>
+        <ol class="list-group list-group-horizontal-lg mt-4">
+            <li class="list-group-item list-group-item-action active">First item</li>
+            <li class="list-group-item list-group-item-action">Second item</li>
+            <li class="list-group-item list-group-item-action">Third item</li>
+        </ol>
+        <ol class="list-group list-group-horizontal-xl mt-4">
+            <li class="list-group-item list-group-item-action">First item</li>
+            <li class="list-group-item list-group-item-action active">Second item</li>
+            <li class="list-group-item list-group-item-action">Third item</li>
+        </ol>
+        <ol class="list-group list-group-horizontal-xxl mt-4">
+            <li class="list-group-item list-group-item-action">First item</li>
+            <li class="list-group-item list-group-item-action">Second item</li>
+            <li class="list-group-item list-group-item-action active">Third item</li>
+        </ol>
+    </div>
+    <!--custom-content-->
+    <div class="col-4">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-action active">
+           <div class="d-flex justify-content-between align-items-center">
+              <h4 class="text-white">First Custom Content</h4>
+              <small class="text-white">3 days ago!</small>
+           </div>
+           <p class="mb-1 text-white">Custom content for list-group-items</p>
+           <small class="text-white">Keep it Up!.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-action">
+            <div class="d-flex justify-content-between align-items-center">
+               <h4 class="text-primary">Second Custom Content</h4>
+               <small class="text-secondary">5 days ago!</small>
+            </div>
+            <p class="mb-1 text-success">Custom content for list-group-items</p>
+            <small class="text-warning">Keep it Up!.</small>
+         </a>
+         <a href="#" class="list-group-item list-group-action">
+            <div class="d-flex justify-content-between align-items-center">
+               <h4 class="text-success">Third Custom Content</h4>
+               <small class="text-secondary">7 days ago!</small>
+            </div>
+            <p class="mb-1 text-danger">Custom content for list-group-items</p>
+            <small class="text-primary">Keep it Up!.</small>
+         </a>
+    </div>
+</div>
+<!--checkbox and radio with stretched-link-->
+<div class="col-4">
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group">
+                <div class="list-group-item">
+                   <input type="checkbox" class="form-check-input me-1" id="checkInputsss">
+                   <label for="checkInputsss" class="form-check-label stretched-link">List-group-item-1</label>
+                </div>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item">
+                   <input type="checkbox" class="form-check-input me-1" id="checkInputss">
+                   <label for="checkInputss" class="form-check-label stretched-link">List-group-item-2</label>
+                </div>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item">
+                   <input type="checkbox" class="form-check-input me-1" id="checkInputs">
+                   <label for="checkInputs" class="form-check-label stretched-link">List-group-item-3</label>
+                </div>
+            </div>
+        </div>    
+        
+        <!--2nnd col-->
+        <div class="col-4">
+            <div class="list-group">
+                <div class="list-group-item">
+                   <input type="radio" class="form-check-input me-1" name="rButton" id="radioInputsss">
+                   <label for="radioInputsss" class="form-check-label stretched-link">List-group-item-1</label>
+                </div>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item">
+                   <input type="radio" class="form-check-input me-1" name="rButton" id="radioInputss">
+                   <label for="radioInputss" class="form-check-label stretched-link">List-group-item-2</label>
+                </div>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item">
+                   <input type="radio" class="form-check-input me-1" name="rButton" id="radioInputs">
+                   <label for="radioInputs" class="form-check-label stretched-link">List-group-item-3</label>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <!--Bootstrap-5 js CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
